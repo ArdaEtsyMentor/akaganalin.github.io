@@ -195,37 +195,7 @@
 
 
 
-@media (max-width: 400px) {
-  /* iPhone 13 ve benzeri ekranlar için CSS ayarları */
 
-  .site-container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-
-  .top-banner__text {
-    width: 100%;
-    margin-left: 0;
-    padding: 10px;
-  }
-
-  .top-banner__image img {
-    width: 100%;
-    height: auto;
-  }
-
-  .main-navigation__ul {
-    padding: 10px;
-    border: none;
-  }
-
-  .instagram-text {
-    font-size: 14px;
-  }
-
-  /* Diğer CSS ayarları */
-}
 
 
 
@@ -311,7 +281,7 @@
         padding-left: 15%;} }
         @media (max-width: 520px) {
           #ustyazi {
-            padding-left: 17%; } }
+            padding-left: 15%; } }
 
 #ustaltyazi{
  margin-bottom: 5px;
