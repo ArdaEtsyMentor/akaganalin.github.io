@@ -278,10 +278,10 @@
     padding-left: 15%;} }
     @media (max-width: 768px) {
       #ustyazi {
-        padding-left: 15%;} }
+        padding-left: 5%;} }
         @media (max-width: 520px) {
           #ustyazi {
-            padding-left: 15%; } }
+            padding-left: 14%; } }
 
 #ustaltyazi{
  margin-bottom: 5px;
@@ -292,10 +292,10 @@
     } }
     @media (max-width: 768px) {
       #ustaltyazi {
-        padding-left: 33%;} }
+        padding-left: 6%;} }
         @media (max-width: 520px) {
           #ustaltyazi {
-            padding-left: 18.5%; } }
+            padding-left: 14%; } }
 
 #altyazi{
   
@@ -321,8 +321,8 @@
     
     padding: 2% 2%;
     
-    width: 25%;
-    
+   
+    max-width: 500px;
     
     
   
@@ -422,7 +422,7 @@
 
 
 .brand-span {
-  font-size: 34px;
+  font-size: 30px;
   color: #F16521; }
 
 
