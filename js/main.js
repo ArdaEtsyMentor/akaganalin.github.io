@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('.burger-container').on('click', function() {
         $('.main-navigation').toggle('slow');
 
-        if($('#myBtn').hasClass('change')) {
+        if ($('#myBtn').hasClass('change')) {
             $('body').addClass('stop-scroll');
         } else {
             $('body').removeClass('stop-scroll');
@@ -13,12 +13,16 @@ $(document).ready(function() {
     /* Smooth scroll */
     $('a[href^="#"]').on('click', function(event) {
         var target = $(this.getAttribute('href'));
-        if( target.length ) {
+        if (target.length) {
             event.preventDefault();
             $('html, body').stop().animate({
                 scrollTop: target.offset().top
-           
             }, 1000); // 1000 ms = 1 saniye, geçiş süresini ayarlayabilirsiniz
+
+            // Kaydırma başladığında navigation menüsünü kapat
+            $('.main-navigation').hide('slow');
+            $('#myBtn').removeClass('change');
+            $('body').removeClass('stop-scroll');
         }
     });
 
@@ -47,15 +51,15 @@ $(document).ready(function() {
 
 var counta = 0;
 
-$(window).scroll(function(e){
+$(window).scroll(function(e) {
     /* Onscroll number counter */
     var statisticNumbers = $('.single-count');
-    if(statisticNumbers.length) {
+    if (statisticNumbers.length) {
         var oTop = statisticNumbers.offset().top - window.innerHeight;
         if (counta == 0 && $(window).scrollTop() > oTop) {
             $('.count').each(function() {
                 var $this = $(this),
-                countTo = $this.attr('data-count');
+                    countTo = $this.attr('data-count');
                 $({
                     countNum: $this.text()
                 }).animate({
@@ -76,3 +80,15 @@ $(window).scroll(function(e){
         }
     }
 });
+
+
+$(document).ready(function() {
+	// Diğer jQuery kodlarınız
+  
+	// Kaydırma sırasında navigation menüsünü kapat
+	$(window).scroll(function() {
+	  $('.main-navigation').hide('slow');
+	  $('#myBtn').removeClass('change');
+	  $('body').removeClass('stop-scroll');
+	});
+  });
