@@ -68,10 +68,10 @@
 /* Includes */
 .site-navigation {
   position: absolute;
-  top: 2%;
+  
   width: 100%;
   z-index: 2; 
-  padding: 5%;
+  padding: 3%;
 }
 
 .site-navigation-inner {
@@ -208,6 +208,9 @@
   background-color: #F16521;
  padding: 5px;
  margin: 12px;
+ align-items: center; /* Yatayda ortalama */
+              justify-content: center; /* Dikeyde ortalama */
+              text-align: center;
 }
 
 
@@ -232,7 +235,7 @@
 
 
 #ustinstatext{
-  margin-top: 40px;
+  margin-top: 15px;
 }
 @media (max-width: 1250px) {
   #ustinstatext {
@@ -265,7 +268,7 @@
   } }
 @media (max-width: 520px) {
   .instagram-text  {
-    font-size: 14px;
+    font-size: 13px;
   
   } }
 
@@ -275,27 +278,28 @@
 }
 @media (max-width: 1250px) {
   #ustyazi{
-    padding-left: 15%;} }
+    } }
     @media (max-width: 768px) {
       #ustyazi {
-        padding-left: 5%;} }
+        padding-left: 1%;} }
         @media (max-width: 520px) {
           #ustyazi {
-            padding-left: 14%; } }
+            padding-left: 1%; } }
 
 #ustaltyazi{
  margin-bottom: 5px;
- padding-left: 1%;
+ 
+ 
 }
 @media (max-width: 1250px) {
   #ustaltyazi {
     } }
     @media (max-width: 768px) {
       #ustaltyazi {
-        padding-left: 6%;} }
+        padding-left: 1%;} }
         @media (max-width: 520px) {
           #ustaltyazi {
-            padding-left: 14%; } }
+            padding-left: 1%; } }
 
 #altyazi{
   
@@ -311,6 +315,16 @@
             padding-left: 20% } }
 
 
+
+            .top-banner__text-up {
+              display: flex;
+              flex-direction: column;
+              align-items: center; /* Yatayda ortalama */
+              justify-content: center; /* Dikeyde ortalama */
+              text-align: center; /* Metin ortalama */
+              width: 100%; /* Genişlik ayarı */
+              /* İç boşluk */
+            }         
   .top-banner__inner .top-banner__text {
     
     
@@ -319,10 +333,11 @@
     border-radius: 10px;
     margin-left: 54px;
     
-    padding: 2% 2%;
+    padding: 2% 1% 2% 1%;
     
    
-    max-width: 550px;
+    width: 33%;
+    
     
     
   
@@ -375,7 +390,7 @@
             font-size: 13px; 
             margin-bottom: 0px;} }
   .top-banner__inner .top-banner__text-up .top-banner__h2 {
-    margin-top: 15px; 
+    margin-top: 5px; 
    
     
     
@@ -422,22 +437,23 @@
 
 
 .brand-span {
-  font-size: 30px;
+  font-size: 50px;
   color: #F16521; }
 
 
   @media (max-width: 1250px) {
-    .top-banner__inner .top-banner__image {
-      width: 50%; }
-      .top-banner__inner .top-banner__image img {
-        width: 100%; } }
+    .brand-span {
+       }
+      .brand-span img {
+         } }
   @media (max-width: 520px) {
-    .top-banner__inner .top-banner__image {
-      width: 65%;
-      margin-bottom: 20px; } }
+    .brand-span {
+      
+       } }
 @media (max-width: 520px) {
-  .top-banner__inner {
-    flex-direction: column; } }
+  .brand-span{
+    font-size: 38px;
+   } }
 
 .brand-button {
   display: inline-block;
